@@ -1,0 +1,37 @@
+{
+    "name": "qingbing/php-abstracts-store",
+    "description": "store 存储组件的抽象",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "abstracts",
+        "store",
+        "cache",
+        "session",
+        "cookie"
+    ],
+    "homepage": "http://www.phpcorner.net",
+    "authors": [
+        {
+            "name": "qingbing",
+            "email": "780042175@qq.com"
+        }
+    ],
+    "require": {
+        "qingbing/php-helper": ">=1.0, <2.0",
+        "qingbing/php-abstracts-component": ">=1.0, <2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Abstracts\\": "src/abstracts"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TestClass\\": "test/classes",
+            "TestCore\\": "test/core",
+            "Test\\": "test/src"
+        }
+    }
+}
