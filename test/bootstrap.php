@@ -7,16 +7,16 @@
  */
 require("../vendor/autoload.php");
 
-$className = isset($_GET['c']) ? $_GET['c'] : 'Helper';
+define('ENV', "dev");
 
 try {
-    if ($_GET['c']) {
+    if ($_GET['c'] || !empty($_GET['c'])) {
         $className = $_GET['c'];
         $class = "\Test\\{$className}";
     } else {
-        $class = "\TestCore\\Helper";
+        $class = "\DBootstrap\TestHelper";
     }
-    /* @var $class \TestCore\Tester */
+    /* @var $class \DBootstrap\Abstracts\Tester */
     $class::getInstance()->run();
 } catch (Exception $e) {
     var_dump($e);

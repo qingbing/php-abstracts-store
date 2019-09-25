@@ -8,8 +8,8 @@
 
 namespace Test;
 
+use DBootstrap\Abstracts\Tester;
 use TestClass\TestStore;
-use TestCore\Tester;
 
 /**
  * Class TestDemo
